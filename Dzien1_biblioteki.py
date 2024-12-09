@@ -21,11 +21,21 @@ for row in sheet.iter_rows(min_row=1, max_row=2):
         print(cell.value)
 
 
-workbook1=load_workbook(r'C:\Users\cscomarch\Desktop\Szkolenie\przyklad PQ\Zeszyt2 — kopia.xlsx')
-sheet1=workbook.active
-sheet1['F1']="testowy komentarz"
+# workbook1=load_workbook(r'C:\Users\cscomarch\Desktop\Szkolenie\przyklad PQ\Zeszyt1 — kopia.xlsx')
+# # sheet1=workbook.active
+# sheet1=workbook1.active
+# sheet1=workbook1['Arkusz1']
+# sheet1['D2']="testowy komentarz"
+# # sheet1.append(['testowy komentarz'])
+# workbook1.save(r'C:\Users\cscomarch\Desktop\Szkolenie\przyklad PQ\Zeszyt1 — kopia.xlsx')
+
+workbook1=load_workbook(r'C:\Users\cscomarch\Desktop\Szkolenie\przyklad PQ\PQoutput_backup — kopia.xlsx')
+# sheet1=workbook.active
+sheet1=workbook1.active
+sheet1=workbook1['Arkusz2']
+sheet1['G2']="testowy komentarz"
 # sheet1.append(['testowy komentarz'])
-workbook1.save(r'C:\Users\cscomarch\Desktop\Szkolenie\przyklad PQ\Zeszyt2 — kopia.xlsx')
+workbook1.save(r'C:\Users\cscomarch\Desktop\Szkolenie\przyklad PQ\PQoutput_backup — kopia.xlsx')
 
 
 

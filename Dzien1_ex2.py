@@ -22,4 +22,7 @@ for  value in ws.iter_rows(
     my_list.append(value)
 
 for ele1, ele2, ele3, ele4, ele5, ele6 in my_list:
-    print("{:<8}{:<35}{:<10}{:<10}{:<15}{:<15}".format(ele1, ele2, ele3, ele4, ele5, ele6))
+    print("{:<8}{:<35}{:<10}{:<10}{:<15}{:<15}".format(ele1, ele2, ele3, ele4, ele5, ele6)) # tylko do wyswietlania w Pythonie
+
+ws['K1']="Sum of Sales"
+wb.save('videogamesales.xlsx')
