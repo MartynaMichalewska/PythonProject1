@@ -51,7 +51,7 @@ print(zbior) # {2, 3, 4, 5}
 slownik={ "name":"radek","age":45}
 print(slownik)
 
-print()
+print("www")
 
 
 
