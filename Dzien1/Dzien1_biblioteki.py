@@ -11,7 +11,7 @@ wb.save('sample.xlsx')
 
 # wb1=load_workbook("C:\Users\cscomarch\Desktop\Szkolenie\przyklad PQ\PQoutput")
 
-workbook=load_workbook('sample.xlsx')
+workbook=load_workbook('../sample.xlsx')
 sheet=workbook.active
 print(sheet)
 print(sheet['A1'].value)
