@@ -56,8 +56,13 @@ ws['T2']='=ceiling(S2,25)'
 
 print(wb.sheetnames) # wszystkie nazwy arkuszy
 
-wb.create_sheet('Empty Sheet') # tworzenie nowego arkusza
-print(wb.sheetnames) # sprawdzenie czy arkusz został utworzony
+# wb.create_sheet('Empty Sheet') # tworzenie nowego arkusza
+# print(wb.sheetnames) # sprawdzenie czy arkusz został utworzony
+
+wb.remove(wb['Empty Sheet1'])
+
+wb.copy_worksheet(wb['Video Game Sales Data'])
+print(wb.sheetnames) # wszystkie nazwy arkuszy
 
 wb.save('../data/videogamesales.xlsx')
 
