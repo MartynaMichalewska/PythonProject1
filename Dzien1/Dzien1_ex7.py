@@ -23,7 +23,7 @@ ws['A1'].border=Border(top=my_border, left=my_border, right=my_border, bottom=my
 #     cell.font=Font(bold=True, size=12) # zmiana formatowania dla wszystkich komórek w wierszu 1, ale dziala tylko n atych ktore byly uzywane
 
 fill=PatternFill(patternType='solid', start_color="90EE90", end_color="90EE90") # wypełnienie całego arkusza
-ws.conditional_formatting.add('G2:K16594',CellIsRule(operator='greaterThan', formula=[8], fill=fill)) #  wstawianie warunkowego wypełnienia, maluje wieksze od 8
+ws.conditional_formatting.add('G2:K16594',CellIsRule(operator='greaterThan', formula=[8], fill=fill, font=Font(color="FF0000"))) #  wstawianie warunkowego wypełnienia, maluje wieksze od 8
 
 
 
